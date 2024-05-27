@@ -10,11 +10,11 @@ def main():
     page_urls = {
         "home": "https://stardewvalleywiki.com/Stardew_Valley_Wiki",
         "crops": "https://stardewvalleywiki.com/Crops",
-        "farm_animals": "https://stardewvalleywiki.com/Animals",
-        "fruit_trees": "https://stardewvalleywiki.com/Fruit_Trees",
-        "monsters": "https://stardewvalleywiki.com/Monsters",
-        "villagers": "https://stardewvalleywiki.com/Villagers",
-        "achievements": "https://stardewvalleywiki.com/Achievements",
+        # "farm_animals": "https://stardewvalleywiki.com/Animals",
+        # "fruit_trees": "https://stardewvalleywiki.com/Fruit_Trees",
+        # "monsters": "https://stardewvalleywiki.com/Monsters",
+        # "villagers": "https://stardewvalleywiki.com/Villagers",
+        # "achievements": "https://stardewvalleywiki.com/Achievements",
     }
 
     # Dynamically import the scrape_page function from each module in the scraping directory
@@ -27,8 +27,9 @@ def main():
         scraped_data = scrape_page_func(page_urls[page])
         print(scraped_data)
 
+        # Insert scraped data into MongoDB collection
+
         # if scraped_data:
-            # Insert scraped data into MongoDB collection
             # collection = db[page]
             # collection.insert_one(scraped_data)
 
