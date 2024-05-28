@@ -9,12 +9,12 @@ def main():
     # URLs for the different pages on the wiki
     page_urls = {
         "home": "https://stardewvalleywiki.com/Stardew_Valley_Wiki",
-        "crops": "https://stardewvalleywiki.com/Crops",
+        # "crops": "https://stardewvalleywiki.com/Crops",
         # "farm_animals": "https://stardewvalleywiki.com/Animals",
-        # "fruit_trees": "https://stardewvalleywiki.com/Fruit_Trees",
+        "fruit_trees": "https://stardewvalleywiki.com/Fruit_Trees",
         # "monsters": "https://stardewvalleywiki.com/Monsters",
         # "villagers": "https://stardewvalleywiki.com/Villagers",
-        "achievements": "https://stardewvalleywiki.com/Achievements",
+        # "achievements": "https://stardewvalleywiki.com/Achievements",
     }
 
     # Dynamically import the scrape_page function from each module in the scraping directory
