@@ -14,7 +14,7 @@ def main():
         # "fruit_trees": "https://stardewvalleywiki.com/Fruit_Trees",
         # "monsters": "https://stardewvalleywiki.com/Monsters",
         # "villagers": "https://stardewvalleywiki.com/Villagers",
-        # "achievements": "https://stardewvalleywiki.com/Achievements",
+        "achievements": "https://stardewvalleywiki.com/Achievements",
     }
 
     # Dynamically import the scrape_page function from each module in the scraping directory
@@ -25,7 +25,7 @@ def main():
         
         # Scrape data from the page and store it in the database
         scraped_data = scrape_page_func(page_urls[page])
-        print(scraped_data)
+        # print(scraped_data)
 
         # Insert scraped data into MongoDB collection
 
